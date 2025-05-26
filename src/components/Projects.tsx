@@ -34,13 +34,14 @@ const projects = [
   {
     id: 1,
     title: "Portfolio Website",
-    category: "Fullstack Development",
+    category: "Frontend Development",
     image: portfolioImg,
     description: "Modern portfolio website with stunning animations, built using React, TypeScript, and Tailwind CSS.",
     longDescription: "A modern, responsive portfolio website showcasing my projects and skills. Built with React and TypeScript for robust type safety, styled with Tailwind CSS for a clean, modern design. Features include smooth animations using Framer Motion, interactive project cards with modal views, a dynamic skill showcase, and a contact form integrated with EmailJS. The site demonstrates modern web development practices with a focus on user experience and performance.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "EmailJS"],
     links: {
-      github: "https://github.com/10noddy/portfolio"
+      live: "https://mayank-s-portfolio-xvg5.vercel.app/",
+      github: "https://github.com/10noddy/Mayank-s-Portfolio"
     }
   },
   {
@@ -53,7 +54,7 @@ const projects = [
     technologies: ["JavaScript", "EJS", "MongoDB", "Express.js"],
     links: {
       live: "https://wanderlust-us3r.onrender.com/listings",
-      github: "https://github.com/10noddy/wanderlust"
+      github: "https://github.com/10noddy/WanderLust"
     }
   },
   {
@@ -78,7 +79,7 @@ const projects = [
     longDescription: "A classic memory-based game built using JavaScript, CSS, and HTML. The game features dynamic UI, event-driven gameplay, and progressively increasing difficulty levels. Implemented interactive animations and sound effects for an engaging user experience.",
     technologies: ["HTML", "CSS", "JavaScript"],
     links: {
-      github: "https://github.com/10noddy/simon-says"
+      github: "https://github.com/10noddy/Simon-Says-Game/tree/main/simonGame"
     }
   }
 ];

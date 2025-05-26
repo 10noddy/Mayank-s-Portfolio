@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GraduationCap, Award, Calendar, ExternalLink } from 'lucide-react';
+import { init, sendForm } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 const educationData = [
   {
