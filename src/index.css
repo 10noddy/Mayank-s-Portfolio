@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 128, 0, 255;
+    --color-secondary: 238, 130, 238;
+    --color-accent: 255, 0, 255;
+    --color-background: 0, 0, 0;
+    --color-text: 255, 255, 255;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(var(--color-primary), 0.5) rgba(var(--color-background), 0.9);
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(var(--color-background), 0.9);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(var(--color-primary), 0.5);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(var(--color-primary), 0.7);
+  }
+}
+
+@layer components {
+  .neon-border {
+    @apply border border-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.7)];
+  }
+
+  .neon-text {
+    @apply text-purple-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)];
+  }
+  
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-500;
+  }
+
+  .cyberpunk-button {
+    @apply px-6 py-3 bg-gradient-to-r from-purple-600 to-fuchsia-600 
+           text-white font-bold tracking-wider uppercase text-sm
+           rounded relative overflow-hidden transition-all duration-300
+           hover:shadow-[0_0_15px_rgba(168,85,247,0.8)] hover:scale-105
+           focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50;
+  }
+
+  .cyberpunk-card {
+    @apply bg-black/60 backdrop-blur-sm border border-purple-500/30
+           rounded-lg overflow-hidden relative
+           transition-all duration-300
+           hover:shadow-[0_0_20px_rgba(168,85,247,0.4)]
+           hover:border-purple-500/60;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-16 gradient-text text-center;
+  }
+}
