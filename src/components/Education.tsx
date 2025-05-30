@@ -53,7 +53,14 @@ const certificationData = [
     issuer: "AWS",
     date: "Mar 2025",
     link: "https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=f4f788c62e64dc3215cc3d4dd1693f70"
+  },
+  {
+    name: "Certificate sigma-batch-Fullstack Development",
+    issuer: "Apna College",
+    date: "May 2025",
+    link: "https://mycourse.app/i4K83ylJykUjSnMp7"
   }
+
 ];
 
 const EducationItem = ({ item }) => {

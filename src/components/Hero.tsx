@@ -186,7 +186,7 @@ const Hero = () => {
                 Hire Me
               </motion.a>
               <motion.a 
-                href="https://drive.google.com/file/d/1YcjxpuFOjL3jRWCuNOPwl647g4CEW3Z1/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1oUvQMp813DU6bez49jdL2fXaQBU9kiQf/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 download="Mayank_Raj_Resume.pdf"
